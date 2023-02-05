@@ -17,9 +17,8 @@ spec:
       containers:
         - name: prometheus
           image: prom/prometheus
-          command: ["--config.file=prom-deployment/prometheus.yml"]
-          # args:
-          #   - --config.file=./prom-deployment/prometheus.yml
+          args:
+            - --config.file=./prom-deployment/prometheus.yml
           ports:
             - containerPort: 9090
               name: web
