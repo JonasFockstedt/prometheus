@@ -17,7 +17,7 @@ spec:
       containers:
         - name: prometheus
           image: prom/prometheus
-          entrypoint: [ls]
+          entrypoint: ["ls"]
           args:
             - --config.file=./prom-deployment/prometheus.yml
           ports:
